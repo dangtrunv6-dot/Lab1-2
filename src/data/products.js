@@ -1,45 +1,53 @@
+import nam1 from "../Images/nam1.jpg";
+import nam2 from "../Images/nam2.jpg";
+import nam3 from "../Images/nam3.jpg";
+import nam4 from "../Images/nam4.jpg";
+import Nu1 from "../Images/Nu1.jpg";
+import Nu2 from "../Images/Nu2.jpg";
+
 const products = [
   {
     id: 1,
     name: "Men Hoodie",
     price: 450000,
     status: "In Stock",
-    image: nam1.jpg,
+    image: nam1,
   },
   {
     id: 2,
     name: "Women T-Shirt",
     price: 250000,
     status: "In Stock",
-    image: Nu1.jpg,
+    image: Nu1,
   },
   {
     id: 3,
     name: "Jeans",
     price: 500000,
     status: "In Stock",
-    image: nam2.jpg,
+    image: nam2,
   },
   {
     id: 4,
     name: "Jacket",
     price: 650000,
     status: "In Stock",
-    image: nam4.jpg,
+    image: nam4,
   },
   {
     id: 5,
     name: "Dress",
     price: 550000,
     status: "In Stock",
-    image: Nu2.jpg,
+    image: Nu2,
   },
   {
     id: 6,
     name: "Shirt",
     price: 350000,
     status: "In Stock",
-    image: nam3.jpg,
+    image: nam3,
   },
 ];
+
 export default products;

@@ -1,28 +1,27 @@
+import React from 'react';
+import products from '../data/products';
+import { Product } from './ProductCard';
 
-
-import products from "../data/products"
-
-export const ProductList = () => {
+export const ProductList = ({ onAddToCart }) => {
     return (
-        <>
-            <div className="main-content">
-                <h1 className="products">Products</h1>
-
-                
-                <div className="product-list">
+        <section className="main-content" id="products-section">
+            <h2 className="products-heading">Products</h2>
+            <div className="product-list">
                 {products.map((item) => {
                     return (
                         <Product
-                            key={item.id}       // key giúp React tối ưu render danh sách
-                            name={item.name}    // prop: tên sản phẩm
-                            price={item.price}  // prop: giá sản phẩm
-                            status={item.status}// prop: tình trạng sản phẩm
-                            image={item.image}  // prop: URL ảnh sản phẩm
+                            key={item.id}
+                            name={item.name}
+                            price={item.price}
+                            status={item.status}
+                            image={item.image}
+                            onAddToCart={onAddToCart}
                         />
-                    )
+                    );
                 })}
-                </div>
             </div>
-        </>
-    )
-}
+        </section>
+    );
+};
+
+export default ProductList;
